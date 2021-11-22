@@ -76,4 +76,13 @@ public class GameController {
             lGameStatus.setStyle("-fx-text-fill: black");
         }
     }
+
+    public void onSave(ActionEvent actionEvent) {
+        game.save();
+    }
+
+    public void onLoad(ActionEvent actionEvent) {
+        game.load();
+        this.rerender();
+    }
 }

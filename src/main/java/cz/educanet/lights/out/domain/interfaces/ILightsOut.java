@@ -19,8 +19,13 @@ public interface ILightsOut {
 
     /**
      * Simulates one round of the Lights Out game.
+     *
      * @param x
      * @param y
      */
     void makeMove(int x, int y);
+
+    void save();
+
+    void load();
 }
